@@ -13,5 +13,5 @@ inputDayOrNight.addEventListener('change', function() {
 })
 
 function buttonCv() {
-    window.open('../DOM/cv.pdf', '_blank');
+    window.open('./DOM/cv.pdf', '_blank');
 }
