@@ -1,6 +1,6 @@
 
 .containerSection-1 {
-    height: 250vh;
+    height: 100%;
     
         
     header.headerIndex {
@@ -26,9 +26,13 @@
         justify-content: space-between;
         flex-wrap: wrap-reverse;
 
+        @media (max-width: 1000px) {
+            margin-top: 50px;
+        }
+
         div.img {
             display: flex;
-            justify-content: end;
+            justify-content: center;
 
             @media (max-width: 1000px) {
                 width: 100%;
@@ -36,7 +40,7 @@
 
             img {
                 width: 500px;
-                opacity: 0.5;
+                opacity: 0.8;
 
                 @media (max-width: 1232px) {
                     width: 400px;
@@ -68,7 +72,7 @@
 
             h3 {
                 /* font-size: 30px; */
-                font-size: clamp(20px, 2.5vw, 1.7rem); 
+                font-size: clamp(20px, 2.5vw, 2rem); 
                 
 
                 &::before {
@@ -81,7 +85,7 @@
 
             h1 {
                 /* font-size: 50px; */
-                font-size: clamp(35px, 2.5vw, 2.5rem); 
+                font-size: clamp(40px, 2.5vw, 3rem); 
                 text-indent: 10px;
             }
 
@@ -96,7 +100,7 @@
             p {
                 /* font-size: 20px; */
                 padding: 5px;
-                font-size: clamp(16px, 2.5vw, 1rem); 
+                font-size: clamp(17px, 2.5vw, 1.4rem); 
                 text-indent: 15px;
                 
 
@@ -107,6 +111,49 @@
                     text-indent: -30px;
                 }
             }
+
+            .bounce-top {
+                animation: bounce-top 1.5s both;
+            }
+
+            @keyframes bounce-top {
+                0% {
+                    transform: translateY(-45px);
+                    animation-timing-function: ease-in;
+                    opacity: 1;
+                }
+                24% {
+                    opacity: 1;
+                }
+                40% {
+                    transform: translateY(-24px);
+                    animation-timing-function: ease-in;
+                }
+                65% {
+                    transform: translateY(-12px);
+                    animation-timing-function: ease-in;
+                }
+                82% {
+                    transform: translateY(-6px);
+                    animation-timing-function: ease-in;
+                }
+                93% {
+                    transform: translateY(-4px);
+                    animation-timing-function: ease-in;
+                }
+                25%,
+                55%,
+                75%,
+                87% {
+                    transform: translateY(0px);
+                    animation-timing-function: ease-out;
+                }
+                100% {
+                    transform: translateY(0px);
+                    animation-timing-function: ease-out;
+                    opacity: 1;
+                    }
+                }
 
             .download-button {
                 margin-top: 20px;
@@ -119,9 +166,9 @@
                 z-index: 1;
                 width: 150px;
                 cursor: pointer;
-               }
-               
-               .download-button .docs {
+            }
+            
+                .download-button .docs {
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
@@ -140,14 +187,14 @@
                 border: solid 1px #e8e8e82d;
                 -webkit-transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
                 transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
-               }
-               
-               .download-button:hover {
+                }
+            
+                .download-button:hover {
                 -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
                         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-               }
-               
-               .download {
+                }
+            
+                .download {
                 position: absolute;
                 inset: 0;
                 display: -webkit-box;
@@ -170,69 +217,93 @@
                 border: solid 1px #01e0572d;
                 -webkit-transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
                 transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
-               }
-               
-               .download-button:hover .download {
+                }
+            
+                .download-button:hover .download {
                 -webkit-transform: translateY(100%);
                     -ms-transform: translateY(100%);
-                        transform: translateY(100%)
-               }
-               
-               .download svg polyline,.download svg line {
+                        transform: translateY(100%);
+                }
+                
+                .download svg polyline,.download svg line {
                 -webkit-animation: docs 1s infinite;
                         animation: docs 1s infinite;
-               }
-               
-               @-webkit-keyframes docs {
+                }
+                
+                @-webkit-keyframes docs {
                 0% {
-                 -webkit-transform: translateY(0%);
-                         transform: translateY(0%);
+                    -webkit-transform: translateY(0%);
+                        transform: translateY(0%);
                 }
-               
+                
                 50% {
-                 -webkit-transform: translateY(-15%);
-                         transform: translateY(-15%);
+                    -webkit-transform: translateY(-15%);
+                            transform: translateY(-15%);
                 }
-               
+                
                 100% {
-                 -webkit-transform: translateY(0%);
-                         transform: translateY(0%);
+                    -webkit-transform: translateY(0%);
+                            transform: translateY(0%);
                 }
-               }
-               
-               @keyframes docs {
+                }
+                
+                @keyframes docs {
                 0% {
-                 -webkit-transform: translateY(0%);
-                         transform: translateY(0%);
+                    -webkit-transform: translateY(0%);
+                        transform: translateY(0%);
                 }
-               
+                
                 50% {
-                 -webkit-transform: translateY(-15%);
-                         transform: translateY(-15%);
+                    -webkit-transform: translateY(-15%);
+                        transform: translateY(-15%);
                 }
-               
+                
                 100% {
-                 -webkit-transform: translateY(0%);
-                         transform: translateY(0%);
+                    -webkit-transform: translateY(0%);
+                            transform: translateY(0%);
                 }
-               }
+                }
         }
     }
+
     section.sectionTwo {
         div.arrowDowGif {
             width: 100%;
-            height: 20vh;
+            height: 10vh;
             display: flex;
             align-items: flex-end;
             justify-content: center;
             img {
-                width: 120px;
+                width: 80px;
             }
         }
     }
     section.sectionThree {
         /* background-color: #fff; */
-        height: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: end;
+        margin-right: 15px;
+        padding: 15px;
+
+
+        div.sectionThreeContent1 {
+            width: 600px;
+            padding-top: 50px;
+            
+            
+            h1 {
+                font-size: clamp(30px, 2vw, 2rem); 
+            }
+
+            p {
+                font-size: clamp(15px, 2.5vw, 1.3rem); 
+                text-indent: 30px;
+                text-align: justify;
+                margin-top: 10px;
+            }
+
+        }
     }
 }
 

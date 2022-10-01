@@ -93,9 +93,19 @@ body::-webkit-scrollbar-thumb:hover {
 .nigth section.sectionOne div.sectionOneContent p::before {
   color: rgba(255, 255, 255, 0.488);
 }
+.nigth section.sectionThree {
+  background-image: linear-gradient(to bottom, #0f0f0f, #0c0c0c, #080808, #040404, #000000);
+}
+.nigth section.sectionThree div.sectionThreeContent1 h1 {
+  color: #fff;
+}
+.nigth section.sectionThree div.sectionThreeContent1 p {
+  color: rgba(255, 255, 255, 0.488);
+  opacity: 0.8;
+}
 
 .day {
-  background-image: linear-gradient(to bottom, #eef0f0, #e1e3e3, #d4d7d7, #c7caca, #babebe);
+  background-image: linear-gradient(to bottom, #eef0f0, #e1e3e3, #d4d7d7, #c7caca, rgba(186, 190, 190, 0));
 }
 .day header nav h1 {
   color: black;
@@ -115,13 +125,23 @@ body::-webkit-scrollbar-thumb:hover {
 .day section.sectionOne div.sectionOneContent p::before {
   color: rgba(0, 0, 0, 0.827);
 }
+.day section.sectionThree {
+  background-image: linear-gradient(to bottom, rgba(186, 190, 190, 0), #c7caca, #d4d7d7, #e1e3e3, rgba(238, 240, 240, 0));
+}
+.day section.sectionThree div.sectionThreeContent1 h1 {
+  color: rgb(23, 2, 2);
+}
+.day section.sectionThree div.sectionThreeContent1 p {
+  color: rgba(0, 0, 0, 0.827);
+  opacity: 0.8;
+}
 
 svg.doc {
   color: black;
 }
 
 .containerSection-1 {
-  height: 250vh;
+  height: 100%;
 }
 .containerSection-1 header.headerIndex {
   height: 60px;
@@ -144,9 +164,14 @@ svg.doc {
   justify-content: space-between;
   flex-wrap: wrap-reverse;
 }
+@media (max-width: 1000px) {
+  .containerSection-1 section.sectionOne {
+    margin-top: 50px;
+  }
+}
 .containerSection-1 section.sectionOne div.img {
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 @media (max-width: 1000px) {
   .containerSection-1 section.sectionOne div.img {
@@ -155,7 +180,7 @@ svg.doc {
 }
 .containerSection-1 section.sectionOne div.img img {
   width: 500px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 @media (max-width: 1232px) {
   .containerSection-1 section.sectionOne div.img img {
@@ -188,7 +213,7 @@ svg.doc {
 }
 .containerSection-1 section.sectionOne div.sectionOneContent h3 {
   /* font-size: 30px; */
-  font-size: clamp(20px, 2.5vw, 1.7rem);
+  font-size: clamp(20px, 2.5vw, 2rem);
 }
 .containerSection-1 section.sectionOne div.sectionOneContent h3::before {
   display: block;
@@ -198,7 +223,7 @@ svg.doc {
 }
 .containerSection-1 section.sectionOne div.sectionOneContent h1 {
   /* font-size: 50px; */
-  font-size: clamp(35px, 2.5vw, 2.5rem);
+  font-size: clamp(40px, 2.5vw, 3rem);
   text-indent: 10px;
 }
 .containerSection-1 section.sectionOne div.sectionOneContent h3.h3-id {
@@ -211,7 +236,7 @@ svg.doc {
 .containerSection-1 section.sectionOne div.sectionOneContent p {
   /* font-size: 20px; */
   padding: 5px;
-  font-size: clamp(16px, 2.5vw, 1rem);
+  font-size: clamp(17px, 2.5vw, 1.4rem);
   text-indent: 15px;
 }
 .containerSection-1 section.sectionOne div.sectionOneContent p::after {
@@ -219,6 +244,44 @@ svg.doc {
   display: block;
   content: " </div>";
   text-indent: -30px;
+}
+.containerSection-1 section.sectionOne div.sectionOneContent .bounce-top {
+  animation: bounce-top 1.5s both;
+}
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
 }
 .containerSection-1 section.sectionOne div.sectionOneContent .download-button {
   margin-top: 20px;
@@ -319,17 +382,34 @@ svg.doc {
 }
 .containerSection-1 section.sectionTwo div.arrowDowGif {
   width: 100%;
-  height: 20vh;
+  height: 10vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 .containerSection-1 section.sectionTwo div.arrowDowGif img {
-  width: 120px;
+  width: 80px;
 }
 .containerSection-1 section.sectionThree {
   /* background-color: #fff; */
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  margin-right: 15px;
+  padding: 15px;
+}
+.containerSection-1 section.sectionThree div.sectionThreeContent1 {
+  width: 600px;
+  padding-top: 50px;
+}
+.containerSection-1 section.sectionThree div.sectionThreeContent1 h1 {
+  font-size: clamp(30px, 2vw, 2rem);
+}
+.containerSection-1 section.sectionThree div.sectionThreeContent1 p {
+  font-size: clamp(15px, 2.5vw, 1.3rem);
+  text-indent: 30px;
+  text-align: justify;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

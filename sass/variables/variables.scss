@@ -93,11 +93,26 @@ input:checked + .slider:before {
                 }
             }
         }
+
+        section.sectionThree {
+            background-image: linear-gradient(to bottom, #0f0f0f, #0c0c0c, #080808, #040404, #000000);
+                div.sectionThreeContent1 {
+                
+                h1 {
+                    color: #fff; 
+                }
+    
+                p {
+                    color: rgba(255, 255, 255, 0.488);
+                    opacity: 0.8;
+                }
+            }
+        }
 }
 
 .day {
     background-image: linear-gradient(to bottom,
-    #eef0f0, #e1e3e3, #d4d7d7, #c7caca, #babebe);
+    #eef0f0, #e1e3e3, #d4d7d7, #c7caca, #babebe00);
 
     header {
         nav {
@@ -131,6 +146,21 @@ input:checked + .slider:before {
                     color: rgba(0, 0, 0, 0.827);
                 }
             }
+        }
+    }
+
+    section.sectionThree {
+        background-image: linear-gradient(to bottom, #babebe00, #c7caca, #d4d7d7, #e1e3e3, #eef0f000);
+        
+        div.sectionThreeContent1 {
+                h1 {
+                    color: rgb(23, 2, 2); 
+                }
+    
+                p {
+                    color: rgba(0, 0, 0, 0.827);
+                    opacity: 0.8;
+                }
         }
     }
 }
