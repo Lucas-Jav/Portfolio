@@ -280,7 +280,7 @@
     }
     section.sectionThree {
         /* background-color: #fff; */
-        height: 100vh;
+        height: 50vh;
         display: flex;
         justify-content: end;
         margin-right: 15px;
@@ -290,7 +290,6 @@
         div.sectionThreeContent1 {
             width: 600px;
             padding-top: 50px;
-            
             
             h1 {
                 font-size: clamp(30px, 2vw, 2rem); 
@@ -303,7 +302,161 @@
                 margin-top: 10px;
             }
 
+            .bounce-top {
+                animation: bounce-top 1.5s both;
+            }
+
+            @keyframes bounce-top {
+                0% {
+                    transform: translateY(-45px);
+                    animation-timing-function: ease-in;
+                    opacity: 1;
+                }
+                24% {
+                    opacity: 1;
+                }
+                40% {
+                    transform: translateY(-24px);
+                    animation-timing-function: ease-in;
+                }
+                65% {
+                    transform: translateY(-12px);
+                    animation-timing-function: ease-in;
+                }
+                82% {
+                    transform: translateY(-6px);
+                    animation-timing-function: ease-in;
+                }
+                93% {
+                    transform: translateY(-4px);
+                    animation-timing-function: ease-in;
+                }
+                25%,
+                55%,
+                75%,
+                87% {
+                    transform: translateY(0px);
+                    animation-timing-function: ease-out;
+                }
+                100% {
+                    transform: translateY(0px);
+                    animation-timing-function: ease-out;
+                    opacity: 1;
+                    }
+                }
+
+            .download-button {
+                margin-top: 20px;
+                position: relative;
+                border-width: 0;
+                color: white;
+                font-size: 15px;
+                font-weight: 600;
+                border-radius: 4px;
+                z-index: 1;
+                width: 150px;
+                cursor: pointer;
+            }
+            
+                .download-button .docs {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                gap: 10px;
+                min-height: 40px;
+                padding: 0 10px;
+                border-radius: 4px;
+                z-index: 1;
+                background-color: #12151a;
+                border: solid 1px #e8e8e82d;
+                -webkit-transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+                transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+                }
+            
+                .download-button:hover {
+                -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                }
+            
+                .download {
+                position: absolute;
+                inset: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                max-width: 90%;
+                margin: 0 auto;
+                z-index: -1;
+                border-radius: 4px;
+                -webkit-transform: translateY(0%);
+                    -ms-transform: translateY(0%);
+                        transform: translateY(0%);
+                background-color: #fff;
+                border: solid 1px #01e0572d;
+                -webkit-transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+                transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+                }
+            
+                .download-button:hover .download {
+                -webkit-transform: translateY(100%);
+                    -ms-transform: translateY(100%);
+                        transform: translateY(100%);
+                }
+                
+                .download svg polyline,.download svg line {
+                -webkit-animation: docs 1s infinite;
+                        animation: docs 1s infinite;
+                }
+                
+                @-webkit-keyframes docs {
+                0% {
+                    -webkit-transform: translateY(0%);
+                        transform: translateY(0%);
+                }
+                
+                50% {
+                    -webkit-transform: translateY(-15%);
+                            transform: translateY(-15%);
+                }
+                
+                100% {
+                    -webkit-transform: translateY(0%);
+                            transform: translateY(0%);
+                }
+                }
+                
+                @keyframes docs {
+                0% {
+                    -webkit-transform: translateY(0%);
+                        transform: translateY(0%);
+                }
+                
+                50% {
+                    -webkit-transform: translateY(-15%);
+                        transform: translateY(-15%);
+                }
+                
+                100% {
+                    -webkit-transform: translateY(0%);
+                            transform: translateY(0%);
+                }
+                }
         }
+    }
+    section.sectionFour {
+        height: 50vh;
     }
 }
 
