@@ -8,6 +8,9 @@
     <title>Portfólio</title>
     <!-- animation scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- css local -->
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
@@ -30,14 +33,18 @@
                 <h3 data-aos="fade-left" data-aos-duration="1500">Olá, meu nome é</h3>
                 <h1 data-aos="fade-left" data-aos-duration="1700">Lucas Oliveira</h1>
                 <h3 class="h3-id" data-aos="fade-left" data-aos-duration="1900">Desenvolvedor Front-End</h3>
-                <p data-aos="fade-left" data-aos-duration="2100">Amo ver os elementos tomando forma, a interação do cogido com a página,
+                <p data-aos="fade-left" data-aos-duration="2100">Amo ver os elementos tomando forma, a interação do
+                    cogido com a página,
                     o estilo e a responsividade se aplicando,
                     de poder fazer o que eu gostaria de ver se fosse um usuário.</p>
-                    <a class="cssbuttons-io" href="mailto:developer.lucasoliveira@gmail.com">
-                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path>
+                <a class="cssbuttons-io" href="mailto:developer.lucasoliveira@gmail.com" data-aos="fade-left" data-aos-duration="2400">
+                    <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                fill="currentColor"></path>
                         </svg> Contratar-me</span>
-                    </a>
+                </a>
             </div>
             <div class="img">
                 <img src="./imgs/pixelMe2.png" alt="">
@@ -55,13 +62,16 @@
         <section class="sectionThree" id="sectionThree">
             <div class="sectionThreeContent1">
                 <h1 data-aos="fade-up" data-aos-duration="1500">Sobre mim:</h1>
-                <p data-aos="fade-up" data-aos-duration="2000">Tenho 18 anos, emigrei para o mundo da programação há um ano,
+                <p data-aos="fade-up" data-aos-duration="2000">Tenho 18 anos, emigrei para o mundo da programação há um
+                    ano,
                     com o curso de Front-End da OneBitCode concluído, busco meu
                     sonho de ser um Full-Stack, desenvolvo sites visuais
                     de forma que o usurário interaja e tenha uma grande
                     sensação de conforto naquele ambiente que ele esta interagindo!
+                    Meu foco principal é desenvolver aplicações web, voltado a parte do Front-End.
                 </p>
-                <button class="download-button bounce-top" onclick="buttonCv()" data-aos="fade-left" data-aos-duration="2500">
+                <button class="download-button bounce-top" onclick="buttonCv()" data-aos="fade-left"
+                    data-aos-duration="2500">
                     <div class="docs"><svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none"
                             stroke-width="2" stroke="currentColor" height="20" width="20" viewBox="0 0 24 24">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -83,7 +93,88 @@
         </section>
 
         <section class="sectionFour" id="sectionFour">
-            
+            <div class="sectionFourContent1">
+                <h1 data-aos="fade-up" data-aos-duration="1500">Abilidades:</h1>
+                <p data-aos="fade-up" data-aos-duration="1600">Durante minha caminhada desenvolvi habilidades
+                    com diversas linguagens de programação e marcação
+                    de hipertexto, porém as que tive um melhor
+                    resultado são as apresentadas no campo ao lado.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Detalhes
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">WakaTime</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Tecnologias e seus usos diarios:</h6>
+                                <figure><embed src="https://wakatime.com/share/@Luk1/7439d6bd-023b-4d71-8849-a63cd21051c4.svg"></embed></figure>
+                                <h6>Tempo codando total:</h6>
+                                <figure><embed src="https://wakatime.com/share/@Luk1/a0e989cc-36cf-4d21-9a63-a811e4dcbd1e.svg"></embed></figure>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentAbilidades">
+                <div class="content1">
+                    <p class="html">HTML</p>
+                    <p class="html">90%</p>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 90%; background-color: orangered;" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="content1">
+                    <p class="css">CSS</p>
+                    <p class="css">90%</p>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 90%; background-color: rgb(27, 100, 226);" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="content1">
+                    <p class="js">JavaScript</p>
+                    <p class="js">65%</p>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 65%; background-color: yellow;" aria-valuenow="65" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="content1">
+                    <p class="scss">Scss</p>
+                    <p class="scss">95%</p>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 95%; background-color: violet;" aria-valuenow="95" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="content1">
+                    <p class="botstr">Bootstrap</p>
+                    <p class="botstr">90%</p>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example"
+                        style="width: 90%; background-color: purple;" aria-valuenow="90" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -92,6 +183,11 @@
     <script>
         AOS.init();
     </script>
+    <!-- script bootstrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

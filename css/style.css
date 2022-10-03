@@ -113,6 +113,14 @@ a {
 .nigth section.sectionFour {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6470588235), rgba(4, 4, 4, 0.7019607843), #080808, #0c0c0c, #0f0f0f);
 }
+.nigth section.sectionFour div.sectionFourContent1 h1 {
+  color: #fff;
+}
+.nigth section.sectionFour div.sectionFourContent1 p {
+  color: rgba(255, 255, 255, 0.488);
+  opacity: 0.9;
+  border-right: 1px solid #c7caca;
+}
 
 .day {
   background-image: linear-gradient(to bottom, #eef0f0, #e1e3e3, #d4d7d7, #c7caca, rgba(186, 190, 190, 0));
@@ -149,6 +157,13 @@ a {
 }
 .day section.sectionFour {
   background-image: linear-gradient(to bottom, rgba(186, 190, 190, 0), #c7caca, #d4d7d7, #e1e3e3, #eef0f0);
+}
+.day section.sectionFour div.sectionFourContent1 h1 {
+  color: rgb(23, 2, 2);
+}
+.day section.sectionFour div.sectionFourContent1 p {
+  color: #303136;
+  border-right: 1px solid #151515;
 }
 
 svg.doc {
@@ -479,15 +494,15 @@ svg.doc {
 }
 .containerSection-1 section.sectionThree {
   /* background-color: #fff; */
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: end;
-  margin-right: 15px;
   padding: 15px;
 }
 .containerSection-1 section.sectionThree div.sectionThreeContent1 {
   width: 600px;
   padding-top: 50px;
+  margin-right: 15px;
 }
 .containerSection-1 section.sectionThree div.sectionThreeContent1 h1 {
   font-size: clamp(30px, 2vw, 2rem);
@@ -634,7 +649,54 @@ svg.doc {
   }
 }
 .containerSection-1 section.sectionFour {
-  height: 50vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.containerSection-1 section.sectionFour div.sectionFourContent1 {
+  width: 600px;
+  padding: 10px;
+}
+.containerSection-1 section.sectionFour div.sectionFourContent1 h1 {
+  font-size: clamp(30px, 2vw, 2rem);
+}
+.containerSection-1 section.sectionFour div.sectionFourContent1 p {
+  padding: 5px;
+  opacity: 0.9;
+  font-size: clamp(15px, 2.5vw, 1.3rem);
+  text-indent: 30px;
+  text-align: justify;
+  margin-top: 10px;
+}
+.containerSection-1 section.sectionFour div.contentAbilidades {
+  width: 400px;
+  height: 40%;
+  padding: 20px;
+}
+.containerSection-1 section.sectionFour div.contentAbilidades div.content1 {
+  display: flex;
+  justify-content: space-between;
+}
+.containerSection-1 section.sectionFour div.contentAbilidades div.content1 p {
+  margin-top: 5px;
+  font-size: 20px;
+}
+.containerSection-1 section.sectionFour div.contentAbilidades div.content1 p.html {
+  color: orangered;
+}
+.containerSection-1 section.sectionFour div.contentAbilidades div.content1 p.css {
+  color: rgb(27, 100, 226);
+}
+.containerSection-1 section.sectionFour div.contentAbilidades div.content1 p.js {
+  color: yellow;
+}
+.containerSection-1 section.sectionFour div.contentAbilidades div.content1 p.scss {
+  color: violet;
+}
+.containerSection-1 section.sectionFour div.contentAbilidades div.content1 p.botstr {
+  color: purple;
 }
 
 /*# sourceMappingURL=style.css.map */

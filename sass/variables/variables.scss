@@ -114,6 +114,18 @@ input:checked + .slider:before {
 
         section.sectionFour {
             background-image: linear-gradient(to bottom, #000000a5, #040404b3, #080808, #0c0c0c, #0f0f0f);
+
+            div.sectionFourContent1 {
+                h1 {
+                    color: #fff
+                }
+    
+                p {
+                    color: rgba(255, 255, 255, 0.488);
+                    opacity: 0.9;
+                    border-right: 1px solid #c7caca;
+                }
+            }
         }
 }
 
@@ -175,6 +187,17 @@ input:checked + .slider:before {
 
     section.sectionFour {
         background-image: linear-gradient(to bottom, #babebe00, #c7caca, #d4d7d7, #e1e3e3, #eef0f0);
+        
+        div.sectionFourContent1 {
+            h1 {
+                color: rgb(23, 2, 2);
+            }
+
+            p {
+                color: #303136;
+                border-right: 1px solid #151515;
+            }
+        }
     }
 }
 

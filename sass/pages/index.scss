@@ -280,16 +280,16 @@
     }
     section.sectionThree {
         /* background-color: #fff; */
-        height: 50vh;
+        height: 60vh;
         display: flex;
         justify-content: end;
-        margin-right: 15px;
         padding: 15px;
 
 
         div.sectionThreeContent1 {
             width: 600px;
             padding-top: 50px;
+            margin-right: 15px;
             
             h1 {
                 font-size: clamp(30px, 2vw, 2rem); 
@@ -456,7 +456,69 @@
         }
     }
     section.sectionFour {
-        height: 50vh;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        div.sectionFourContent1 {
+            width: 600px;
+            padding: 10px;
+            
+
+            h1 {
+                font-size: clamp(30px, 2vw, 2rem); 
+            }
+
+            p {
+                padding: 5px;
+                opacity: 0.9;
+                font-size: clamp(15px, 2.5vw, 1.3rem); 
+                text-indent: 30px;
+                text-align: justify;
+                margin-top: 10px;
+            }
+        }
+
+        div.contentAbilidades {
+            width: 400px;
+            height: 40%;
+            padding: 20px;
+            
+
+            div.content1 {
+                display: flex;
+                justify-content: space-between;
+                
+                p {
+                    margin-top: 5px;
+                    font-size: 20px;
+                }
+
+                p.html {
+                    color: orangered;
+                    
+                    
+                }
+
+                p.css {
+                    color: rgb(27, 100, 226);
+                }
+
+                p.js {
+                    color: yellow;
+                }
+
+                p.scss {
+                    color: violet;
+                }
+
+                p.botstr {
+                    color: purple;
+                }
+            }
+        }
     }
 }
 
