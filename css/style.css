@@ -99,7 +99,7 @@ a {
   color: rgba(255, 255, 255, 0.488);
 }
 .nigth section.sectionThree {
-  background-image: linear-gradient(to bottom, #0f0f0f, #0c0c0c, #080808, rgba(4, 4, 4, 0.7019607843), rgba(0, 0, 0, 0.6470588235));
+  /* background-image: linear-gradient(to bottom, #0f0f0f, #0c0c0c, #080808, #040404b3, #000000a5); */
 }
 .nigth section.sectionThree div.sectionThreeContent1 h1 {
   color: #fff;
@@ -111,7 +111,7 @@ a {
   border-left: 1px solid #c7caca;
 }
 .nigth section.sectionFour {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6470588235), rgba(4, 4, 4, 0.7019607843), #080808, #0c0c0c, #0f0f0f);
+  /* background-image: linear-gradient(to bottom, #000000a5, #040404b3, #080808, #0c0c0c, #0f0f0f); */
 }
 .nigth section.sectionFour div.sectionFourContent1 h1 {
   color: #fff;
@@ -120,6 +120,58 @@ a {
   color: rgba(255, 255, 255, 0.488);
   opacity: 0.9;
   border-right: 1px solid #c7caca;
+}
+.nigth section.sectionFour .contentAbilidades {
+  border: 1px solid white;
+}
+.nigth section.sectionFour .contentAbilidades legend {
+  color: #fff;
+  text-decoration: underline;
+}
+.nigth section.sectionFive {
+  /* background-image: linear-gradient(to top, #babebe00, #fff, #868686a4, #868686, #868686a4, #86868670, #eef0f0); */
+}
+.nigth section.sectionFive div.sectionFiveCarroussel {
+  border: 1px solid #fff;
+}
+.nigth section.sectionFive div.sectionFiveCarroussel h1 {
+  color: #fff;
+}
+.nigth section.sectionFive div.sectionFiveCarroussel h3 {
+  color: #fff;
+}
+.nigth section.sectionSix h1 {
+  color: white;
+}
+.nigth section.sectionSix div.sectionSixContent legend {
+  color: rgba(255, 255, 255, 0.719);
+}
+.nigth section.sectionSix div.sectionSixContent p {
+  color: #545257;
+}
+.nigth section.sectionSix div.sectionSixContent p span {
+  color: #c7caca;
+}
+.nigth section.sectionSix div.sectionSixContent ul li {
+  color: #303136;
+}
+.nigth section.sectionSix div.sectionSixContent ul li a {
+  color: #303136;
+}
+.nigth section.sectionSix div.sectionSixContent ul li a:hover {
+  color: white;
+}
+.nigth section.sectionSix div.sectionSixContent ul li:hover {
+  color: white;
+}
+.nigth footer.footer {
+  background-color: rgba(10, 10, 10, 0.9098039216);
+}
+.nigth footer.footer p {
+  color: #fff;
+}
+.nigth footer.footer p span {
+  color: #545257;
 }
 
 .day {
@@ -144,7 +196,7 @@ a {
   color: rgba(0, 0, 0, 0.827);
 }
 .day section.sectionThree {
-  background-image: linear-gradient(to bottom, rgba(186, 190, 190, 0), #c7caca, #d4d7d7, #e1e3e3, rgba(238, 240, 240, 0));
+  /* background-image: linear-gradient(to bottom, #babebe00, #c7caca, #d4d7d7, #e1e3e3, #eef0f000); */
 }
 .day section.sectionThree div.sectionThreeContent1 h1 {
   color: rgb(23, 2, 2);
@@ -156,7 +208,7 @@ a {
   border-left: 1px solid #303136;
 }
 .day section.sectionFour {
-  background-image: linear-gradient(to bottom, rgba(186, 190, 190, 0), #c7caca, #d4d7d7, #e1e3e3, #eef0f0);
+  /* background-image: linear-gradient(to bottom, #babebe00, #c7caca, #d4d7d7, #e1e3e3, #eef0f0); */
 }
 .day section.sectionFour div.sectionFourContent1 h1 {
   color: rgb(23, 2, 2);
@@ -164,6 +216,58 @@ a {
 .day section.sectionFour div.sectionFourContent1 p {
   color: #303136;
   border-right: 1px solid #151515;
+}
+.day section.sectionFour .contentAbilidades {
+  border: 1px solid black;
+}
+.day section.sectionFour .contentAbilidades legend {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+.day section.sectionFive {
+  /* background-image: linear-gradient(to top, #babebe00, #fff, #868686a4, #868686, #868686a4, #86868670, #eef0f0); */
+}
+.day section.sectionFive div.sectionFiveCarroussel {
+  border: 1px solid black;
+}
+.day section.sectionFive div.sectionFiveCarroussel h1 {
+  color: black;
+}
+.day section.sectionFive div.sectionFiveCarroussel h3 {
+  color: black;
+}
+.day section.sectionSix h1 {
+  color: black;
+}
+.day section.sectionSix div.sectionSixContent legend {
+  color: rgba(0, 0, 0, 0.928);
+}
+.day section.sectionSix div.sectionSixContent p {
+  color: rgba(48, 49, 54, 0.8549019608);
+}
+.day section.sectionSix div.sectionSixContent p span {
+  color: black;
+}
+.day section.sectionSix div.sectionSixContent ul li {
+  color: #303136;
+}
+.day section.sectionSix div.sectionSixContent ul li a {
+  color: #303136;
+}
+.day section.sectionSix div.sectionSixContent ul li a:hover {
+  color: black;
+}
+.day section.sectionSix div.sectionSixContent ul li:hover {
+  color: black;
+}
+.day footer.footer {
+  background-color: #fff;
+}
+.day footer.footer p {
+  color: #545257;
+}
+.day footer.footer p span {
+  color: black;
 }
 
 svg.doc {
@@ -206,6 +310,9 @@ svg.doc {
   align-items: center;
   padding: 0.8em 1.2em 0.8em 1.05em;
 }
+.cssbuttons-io span:hover {
+  color: rgba(0, 0, 0, 0.872);
+}
 
 .cssbuttons-io::before,
 .cssbuttons-io::after {
@@ -240,6 +347,66 @@ svg.doc {
   -webkit-transform: scale(0.95);
   -ms-transform: scale(0.95);
   transform: scale(0.95);
+}
+
+#carr1 {
+  height: 50vh;
+  background-image: url(../imgs/carroussel-img/facebit.png);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1024px) {
+  #carr1 {
+    height: 80vh;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+#carr2 {
+  height: 50vh;
+  background-image: url(../imgs/carroussel-img/jdm.png);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1024px) {
+  #carr2 {
+    height: 80vh;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+#carr3 {
+  height: 50vh;
+  background-image: url(../imgs/carroussel-img/spacebit.png);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1024px) {
+  #carr3 {
+    height: 80vh;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+#carr4 {
+  height: 50vh;
+  background-image: url(../imgs/carroussel-img/ptlarissa.png);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1024px) {
+  #carr4 {
+    height: 80vh;
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 .containerSection-1 {
@@ -499,6 +666,12 @@ svg.doc {
   justify-content: end;
   padding: 15px;
 }
+@media (max-width: 1130px) {
+  .containerSection-1 section.sectionThree {
+    justify-content: center;
+    gap: 20px;
+  }
+}
 .containerSection-1 section.sectionThree div.sectionThreeContent1 {
   width: 600px;
   padding-top: 50px;
@@ -652,12 +825,24 @@ svg.doc {
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
+}
+@media (max-width: 1130px) {
+  .containerSection-1 section.sectionFour {
+    justify-content: center;
+    gap: 20px;
+  }
 }
 .containerSection-1 section.sectionFour div.sectionFourContent1 {
   width: 600px;
   padding: 10px;
+  margin-left: 10%;
+}
+@media (max-width: 1130px) {
+  .containerSection-1 section.sectionFour div.sectionFourContent1 {
+    margin-left: 0;
+  }
 }
 .containerSection-1 section.sectionFour div.sectionFourContent1 h1 {
   font-size: clamp(30px, 2vw, 2rem);
@@ -674,6 +859,11 @@ svg.doc {
   width: 400px;
   height: 40%;
   padding: 20px;
+}
+@media (max-width: 425px) {
+  .containerSection-1 section.sectionFour div.contentAbilidades {
+    width: 300px;
+  }
 }
 .containerSection-1 section.sectionFour div.contentAbilidades div.content1 {
   display: flex;
@@ -697,6 +887,81 @@ svg.doc {
 }
 .containerSection-1 section.sectionFour div.contentAbilidades div.content1 p.botstr {
   color: purple;
+}
+.containerSection-1 section.sectionFive {
+  margin-top: 250px;
+  padding: 10px;
+}
+.containerSection-1 section.sectionFive div.sectionFiveCarroussel {
+  padding: 40px;
+  height: 100%;
+  border-radius: 10px;
+}
+.containerSection-1 section.sectionFive div.sectionFiveCarroussel h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+.containerSection-1 section.sectionFive div.sectionFiveCarroussel h3 {
+  font-size: clamp(18px, 2vw, 2rem);
+}
+.containerSection-1 section.sectionFive div.sectionFiveCarroussel div.carrousel-linkProjetos {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+@media (max-width: 455px) {
+  .containerSection-1 section.sectionFive div.sectionFiveCarroussel div.carrousel-linkProjetos {
+    justify-content: center;
+  }
+}
+.containerSection-1 section.sectionSix {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerSection-1 section.sectionSix h1 {
+  text-align: center;
+  margin-top: 150px;
+}
+.containerSection-1 section.sectionSix div.sectionSixContent {
+  width: 70vw;
+}
+@media (max-width: 535px) {
+  .containerSection-1 section.sectionSix div.sectionSixContent {
+    width: 100vw;
+    padding: 20px;
+  }
+}
+.containerSection-1 section.sectionSix div.sectionSixContent legend {
+  font-size: clamp(20px, 1.5vw, 2rem);
+}
+.containerSection-1 section.sectionSix div.sectionSixContent p {
+  font-size: clamp(18px, 1vw, 2rem);
+  text-indent: 20px;
+}
+@media (max-width: 535px) {
+  .containerSection-1 section.sectionSix div.sectionSixContent p {
+    text-align: justify;
+  }
+}
+.containerSection-1 section.sectionSix div.sectionSixContent ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.containerSection-1 footer.footer {
+  padding: 10px;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.containerSection-1 footer.footer p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

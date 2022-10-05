@@ -96,7 +96,7 @@ input:checked + .slider:before {
         }
 
         section.sectionThree {
-            background-image: linear-gradient(to bottom, #0f0f0f, #0c0c0c, #080808, #040404b3, #000000a5);
+            /* background-image: linear-gradient(to bottom, #0f0f0f, #0c0c0c, #080808, #040404b3, #000000a5); */
                 div.sectionThreeContent1 {
                 
                 h1 {
@@ -113,7 +113,7 @@ input:checked + .slider:before {
         }
 
         section.sectionFour {
-            background-image: linear-gradient(to bottom, #000000a5, #040404b3, #080808, #0c0c0c, #0f0f0f);
+            /* background-image: linear-gradient(to bottom, #000000a5, #040404b3, #080808, #0c0c0c, #0f0f0f); */
 
             div.sectionFourContent1 {
                 h1 {
@@ -126,12 +126,90 @@ input:checked + .slider:before {
                     border-right: 1px solid #c7caca;
                 }
             }
+
+            .contentAbilidades {
+                border: 1px solid white;
+
+                legend {
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
         }
+
+        section.sectionFive {
+            /* background-image: linear-gradient(to top, #babebe00, #fff, #868686a4, #868686, #868686a4, #86868670, #eef0f0); */
+            
+                div.sectionFiveCarroussel {
+                    border: 1px solid #fff;
+
+                    h1 {
+                        color: #fff;
+                    }
+
+                    h3 {
+                        color: #fff;
+                    }
+                }
+        }
+
+        section.sectionSix {
+            h1 {
+                color: white;
+            }
+
+            div.sectionSixContent {
+                legend {
+                    color: rgba(255, 255, 255, 0.719);
+                }
+
+                p {
+                color: #545257;
+
+                span {
+                    color: #c7caca;
+                }
+                }
+
+                ul {
+                    li {
+                        color: #303136;
+                        a {
+                            color: #303136;
+                            &:hover {
+                                color: white;
+                            }
+                        }
+    
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+
+            }
+        }
+    
+        footer.footer {
+            background-color: #0a0a0ae8;
+            p {
+                color: #fff;
+
+                span {
+                    color: #545257;
+                }
+            }
+        }
+        
 }
+
+
 
 .day {
     background-image: linear-gradient(to bottom,
     #eef0f0, #e1e3e3, #d4d7d7, #c7caca, #babebe00);
+
+    
 
     header {
         nav {
@@ -169,7 +247,7 @@ input:checked + .slider:before {
     }
 
     section.sectionThree {
-        background-image: linear-gradient(to bottom, #babebe00, #c7caca, #d4d7d7, #e1e3e3, #eef0f000);
+        /* background-image: linear-gradient(to bottom, #babebe00, #c7caca, #d4d7d7, #e1e3e3, #eef0f000); */
         
         div.sectionThreeContent1 {
                 h1 {
@@ -186,7 +264,7 @@ input:checked + .slider:before {
     }
 
     section.sectionFour {
-        background-image: linear-gradient(to bottom, #babebe00, #c7caca, #d4d7d7, #e1e3e3, #eef0f0);
+        /* background-image: linear-gradient(to bottom, #babebe00, #c7caca, #d4d7d7, #e1e3e3, #eef0f0); */
         
         div.sectionFourContent1 {
             h1 {
@@ -196,6 +274,77 @@ input:checked + .slider:before {
             p {
                 color: #303136;
                 border-right: 1px solid #151515;
+            }
+        }
+
+        .contentAbilidades {
+            border: 1px solid black;
+
+            legend {
+                color: rgb(0, 0, 0);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    section.sectionFive {
+        /* background-image: linear-gradient(to top, #babebe00, #fff, #868686a4, #868686, #868686a4, #86868670, #eef0f0); */
+        
+            div.sectionFiveCarroussel {
+                border: 1px solid black;
+                h1 {
+                    color: black;
+                }
+
+                h3 {
+                    color: black;
+                }
+            }
+    }
+
+    section.sectionSix {
+        h1 {
+            color: black;
+        }
+
+        div.sectionSixContent {
+            legend {
+                color: rgba(0, 0, 0, 0.928);
+            }
+
+            p {
+            color: #303136da;
+
+            span {
+                color: black;
+            }
+            }
+
+            ul {
+                li {
+                    color: #303136;
+                    a {
+                        color: #303136;
+                        &:hover {
+                            color: black;
+                        }
+                    }
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    footer.footer {
+        background-color: #fff;
+        p {
+            color: #545257;
+
+            span {
+                color: black;
             }
         }
     }
@@ -240,6 +389,10 @@ svg.doc {
         -ms-flex-align: center;
             align-items: center;
     padding: 0.8em 1.2em 0.8em 1.05em;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.872);
+    }
    }
    
    .cssbuttons-io::before,
@@ -276,4 +429,60 @@ svg.doc {
         -ms-transform: scale(0.95);
             transform: scale(0.95);
    }
-   
+
+#carr1 {
+    height: 50vh;
+    background-image: url(../imgs/carroussel-img/facebit.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: 1024px) {
+        height: 80vh;
+        background-size: contain;
+        background-position: center;
+    }
+
+}
+
+#carr2 {
+    height: 50vh;
+    background-image: url(../imgs/carroussel-img/jdm.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: 1024px) {
+        height: 80vh;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+#carr3 {
+    height: 50vh;
+    background-image: url(../imgs/carroussel-img/spacebit.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: 1024px) {
+        height: 80vh;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+#carr4 {
+    height: 50vh;
+    background-image: url(../imgs/carroussel-img/ptlarissa.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @media (min-width: 1024px) {
+        height: 80vh;
+        background-size: contain;
+        background-position: center;
+    }
+}
