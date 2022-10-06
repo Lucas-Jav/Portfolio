@@ -486,3 +486,17 @@ svg.doc {
         background-position: center;
     }
 }
+
+#carr5 {
+    height: 50vh;
+    background-image: url(../imgs/carroussel-img/calculadora.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @media (min-width: 1024px) {
+        height: 80vh;
+        background-size: contain;
+        background-position: center;
+    }
+}
