@@ -4,11 +4,11 @@ inputDayOrNight.addEventListener('change', function() {
     const trocaCor = document.getElementById('colordays')
 
     if (this.checked) {
-        trocaCor.classList.remove('day')
-        trocaCor.classList.add('nigth')
+        trocaCor.classList.toggle('day')
+        trocaCor.classList.toggle('nigth')
     } else {
-        trocaCor.classList.remove('nigth')
-        trocaCor.classList.add('day')
+        trocaCor.classList.toggle('nigth')
+        trocaCor.classList.toggle('day')
     }
 })
 
