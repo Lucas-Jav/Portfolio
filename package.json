@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "Portfolio web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-Jav/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "dev",
+    "desenvolvedor",
+    "programaçao",
+    "javascript"
+  ],
+  "author": "Lucas Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lucas-Jav/Portfolio/issues"
+  },
+  "homepage": "https://lucas-jav.github.io/Portfolio/"
+}
