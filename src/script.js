@@ -15,6 +15,6 @@ inputDayOrNight.addEventListener('change', function() {
 const downloadCv = document.getElementById('cv')
 
 downloadCv.addEventListener('click', function buttonCv() {
-    return window.open("../doc/cv.pdf", "_blank");
+    return window.open('./cv.pdf', '_blank');
 })
 
