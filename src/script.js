@@ -1,3 +1,5 @@
+import '../css/style.css'
+
 const inputDayOrNight = document.querySelector('input[name=checkbox]')
 
 inputDayOrNight.addEventListener('change', function() {
@@ -12,6 +14,9 @@ inputDayOrNight.addEventListener('change', function() {
     }
 })
 
-function buttonCv() {
+const downloadCv = document.getElementById('cv')
+
+downloadCv.addEventListener('click', function buttonCv() {
     return window.open('./DOM/cv.pdf', '_blank');
-}
+})
+
